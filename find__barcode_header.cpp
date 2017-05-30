@@ -1,3 +1,10 @@
+/*
+Script to identify barcodes in header from fastq files
+To compile: 
+    g++ -std=c++11 -o header_barode_fastq
+To run:
+    header_barcode_fastq filename
+*/
 #include <iostream>
 #include <string>
 #include <algorithm>
@@ -13,9 +20,6 @@ string process_header(string header){
 
 int main(int argv, char *argc[])
 {
-    string header;
-    string read;
-    string quality_score;
     string temp;
 
     fstream f;
@@ -26,10 +30,10 @@ int main(int argv, char *argc[])
         int i=0;
             
         if(temp[0]=='@'){
-            size_t pos = header.find("_",0)+1 ;
-            pos = header.find("_",pos) +1  ;
-            size_t pos2 = header.find("_",pos);
-            cout << header.substr(pos, pos2-pos);     
+            size_t pos = temp.find("_",0)+1 ;
+            pos = temp.find("_",pos) +1  ;
+            size_t pos2 = temp.find("_",pos);
+            cout << temp.substr(pos, pos2-pos);     
         }    
             
     }
