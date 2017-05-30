@@ -3,7 +3,7 @@
 ## 1k_splitter.cpp
 1. Script to filter fastq reads with certain inline barcodes(found at the start of the read)
 2. To modify barcodes add or remove them from line 31  
-  *To add more barcodes     
+  * To add more barcodes     
    if(barcode=="TTCGTGATTC"||barcode=="TTGGAGTGTC"||barcode=="TTGGCATCTC" || barcode="TTTTTTTTTT" )  
   * To remove barcode  
    if(barcode=="TTCGTGATTC"||barcode=="TTGGAGTGTC")  
