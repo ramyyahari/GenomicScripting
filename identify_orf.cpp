@@ -1,3 +1,10 @@
+/*
+Script to identify ORF from fasta files.(Not completely functional)
+To compile:
+	g++ -std=c++11 identify_orf.cpp -o orf
+To run:
+	orf filename
+*/
 #include<iostream>
 #include<string>
 #include<algorithm>
