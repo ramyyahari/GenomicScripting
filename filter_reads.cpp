@@ -1,3 +1,7 @@
+/*
+Look at filter_reads_new.cpp
+Same as above file, fewer filters.
+*/
 #include <iostream>
 #include <string>
 #include <fstream>
