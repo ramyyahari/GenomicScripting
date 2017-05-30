@@ -1,3 +1,15 @@
+/*
+Script for extracting sequences from a fasta file, given a start and stop codon.
+First it identifies the positions of said codons in the sequence.
+Then it spits out the scaffold number, direction of sequence, start position, stop position, sequence
+To modify start and stop codon, change string in line 54 and 68
+Before running:
+	Input file name should be changed on line 42
+To compile: 
+	g++ -std=c++11 directional_enzyme_split.cpp -o directional_split
+To run: 
+	./direction_split
+*/
 #include<iostream>
 #include<string>
 #include<algorithm>
