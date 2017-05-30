@@ -1,7 +1,7 @@
 /*
 Script to identify barcodes in header from fastq files
 To compile: 
-    g++ -std=c++11 -o header_barode_fastq
+    g++ -std=c++11 find_barcode_header.cpp -o header_barode_fastq
 To run:
     header_barcode_fastq filename
 */
