@@ -1,3 +1,15 @@
+/*
+Extracting reads from Stacks output
+This was used to identify reads that belong to certain popoulation using flags
+The identifiers on line 35, 37, 39, 41 were based on the names given to stacks for the population map.
+Output: Line numbers of matching Loci
+If you'd prefer the reads instead of line numbers, uncomment line 49 and comment line 53
+Change input file name on line 29
+Compile:
+	g++ -std=c++11 filter_read_new.cpp -o filter_stacks
+Run:
+	./filter_stacks
+*/
 #include <iostream>
 #include <string>
 #include <fstream>
