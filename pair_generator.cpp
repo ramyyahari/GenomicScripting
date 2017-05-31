@@ -1,3 +1,10 @@
+/*
+Script to convert given fastq file into a set of paired-end reads by labeling every second read's header as a pair.
+To compile:
+    g++ -std=c++11 pair_generator.cpp -o pair_generator
+To run:
+    ./pair_generator input_filename
+*/
 #include <iostream>
 #include <string>
 #include <algorithm>
